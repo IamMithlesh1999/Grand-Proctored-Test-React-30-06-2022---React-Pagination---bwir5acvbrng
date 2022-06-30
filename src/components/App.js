@@ -1,6 +1,14 @@
-const fetchPosts = async (page, limit) => {
-  let url = `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=${limit}`;
-  return fetch(url);
-};
+import React from 'react'
+import '../styles/App.css';
+import { PostList } from './PostList';
+const App = () => {
 
-export { fetchPosts };
+  return (
+    <div id="main">
+      <PostList />
+    </div>
+  )
+}
+
+
+export default App;
